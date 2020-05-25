@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/optionTableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:stretchColumns="*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        // Option Row
+
+        <TableRow
+            android:id="@+id/optionRow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/option1Text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:background="#b0b0b0"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="Option 1"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/option2Text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:background="#FF0000"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="Option 2"
+                android:textColor="#000"
+                android:textSize="14dp" />
+        </TableRow>
+
+        // Option inside row
+
+        <TableRow
+            android:id="@+id/tableInside"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">>
+
+            <TextView
+                android:id="@+id/content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="Content"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/priority1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="priority"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/score1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="Score"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="Content"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/priority2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="priority"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="Score"
+                android:textColor="#000"
+                android:textSize="14dp" />
+        </TableRow>
+
+        // Option contents row
+
+        <TableRow
+            android:id="@+id/table1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">>
+
+            <EditText
+                android:id="@+id/contentWrite1-1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="String"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/priorityWrite1-1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Int"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:inputType="numberDecimal"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/scoreWrite1-1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Int"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:inputType="numberSigned"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/contentWrite1-2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="String"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/priorityWrite1-2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Int"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:inputType="numberDecimal"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/scoreWrite1-2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Int"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:inputType="numberSigned"
+                android:textSize="14dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">>
+
+            <EditText
+                android:id="@+id/contentWrite2-1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="String"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/priorityWrite2-1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Int"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:inputType="numberDecimal"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/scoreWrite2-1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Int"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:inputType="numberSigned"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/contentWrite2-2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="String"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/priorityWrite2-2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Int"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:inputType="numberDecimal"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/scoreWrite2-2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Int"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:inputType="numberSigned"
+                android:textSize="14dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">>
+
+            <EditText
+                android:id="@+id/contentWrite3-1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="String"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/priorityWrite3-1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Int"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:inputType="numberDecimal"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/scoreWrite3-1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Int"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:inputType="numberSigned"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/contentWrite3-2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="String"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/priorityWrite3-2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Int"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:inputType="numberDecimal"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/scoreWrite3-2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Int"
+                android:padding="5dip"
+                android:textColor="#000"
+                android:inputType="numberSigned"
+                android:textSize="14dp" />
+        </TableRow>
+
+        // Add more contents row
+
+        <TableRow
+            android:id="@+id/addRow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_span="6"
+                android:gravity="center"
+                android:text="Add content" />
+        </TableRow>
+
+
+        // Selected Option row
+
+        // Save Option row
+
+        // Decide Option row
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/decisionTableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:id="@+id/selectedOptionRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/selectedOptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70dp"
+                android:layout_span="6"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="selectedOption"
+                android:textSize="14dp" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/decideRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/decideButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:gravity="center"
+                android:text="Decide" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
